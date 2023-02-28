@@ -1,0 +1,81 @@
+{
+    "name": "artisan-labs/laravel-visit-tracker",
+    "description": "An improvement and combination of the 'antonioribeiro/tracker' & 'shetabit/visitor' plugins",
+    "keywords": [
+        "laravel",
+        "visit",
+        "tracker",
+        "improvement",
+        "antonioribeiro/tracker",
+        "shetabit/visitor"
+    ],
+    "homepage": "https://github.com/artisanbr/laravel-visit-tracker",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio Carlos Ribeiro",
+            "email": "acr@antoniocarlosribeiro.com",
+            "homepage": "https://github.com/antonioribeiro"
+        },
+        {
+            "name": "Mahdi Khanzadi",
+            "email": "khanzadimahdi@gmail.com",
+            "homepage": "https://github.com/khanzadimahdi"
+        },
+        {
+            "name": "Renalcio Carlos Jr.",
+            "homepage": "https://github.com/renalcio",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "canonical": false,
+            "url": "./packages/pragmarx/tracker",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "pragmarx/tracker": "4.0.x-dev"
+                }
+            }
+        },
+        {
+            "type": "path",
+            "canonical": false,
+            "url": "./packages/pragmarx/support",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "pragmarx/support": "0.9.x-dev"
+                }
+            }
+        }
+    ],
+    "require": {
+        "geoip2/geoip2": "^2.13",
+        "pragmarx/tracker": "4.0.x-dev",
+        "pragmarx/support": "0.9.x-dev",
+        "shetabit/visitor": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtisanLabs\\VisitTracker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/stubs"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev",
+            "master": "dev-main",
+            "dev": "dev-main"
+        }
+    }
+}
