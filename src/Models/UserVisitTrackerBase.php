@@ -15,4 +15,6 @@ abstract class UserVisitTrackerBase extends VisitTrackerBase implements
     CanResetPasswordContract
 {
     use Authenticatable, Authorizable, CanResetPassword, MustVerifyEmail;
+
+    protected $connection = 'mysql';
 }

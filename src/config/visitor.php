@@ -16,7 +16,14 @@ return [
 
 
     //name of the table which visit records should save in
-    'table_name' =>  'shetabit_visits',
+    'table_name' =>  'visits',
+
+    //Database connection
+    'connection' => 'visit_tracker',
+
+    //Visit Model
+    'visit_model' => \ArtisanLabs\LaravelVisitTracker\Models\Visit::class,
+
 
     /*
     |--------------------------------------------------------------------------

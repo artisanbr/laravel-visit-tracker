@@ -56,6 +56,7 @@
         }
     ],
     "require": {
+        "laravel/framework": ">=8",
         "geoip2/geoip2": "^2.13",
         "pragmarx/tracker": "4.0.x-dev",
         "pragmarx/support": "0.9.x-dev",
@@ -63,7 +64,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ArtisanLabs\\VisitTracker\\": "src/"
+            "ArtisanLabs\\LaravelVisitTracker\\": "src/"
         }
     },
     "autoload-dev": {
