@@ -36,7 +36,7 @@
         {
             "type": "path",
             "canonical": true,
-            "url": "./packages/pragmarx/tracker",
+            "url": "packages/pragmarx/tracker",
             "options": {
                 "symlink": true,
                 "versions": {
@@ -47,7 +47,7 @@
         {
             "type": "path",
             "canonical": true,
-            "url": "./packages/pragmarx/support",
+            "url": "packages/pragmarx/support",
             "options": {
                 "symlink": true,
                 "versions": {
