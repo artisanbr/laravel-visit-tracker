@@ -257,7 +257,7 @@ return [
      *      protected $connection = 'mysql';
      * ...
      */
-    'user_model' => \ArtisanLabs\LaravelVisitTracker\ArtisanBR\Adminx\Common\App\Models\UserVisitTrackerBase::class,
+    'user_model' => \ArtisanLabs\LaravelVisitTracker\Adminx\Common\Models\UserVisitTrackerBase::class,
 
     /*
      * You can use your own model for every single table Tracker has.
