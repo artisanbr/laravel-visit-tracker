@@ -35,22 +35,12 @@
     "repositories": [
         {
             "type": "path",
-            "canonical": true,
-            "url": "packages/pragmarx/tracker",
+            "canonical": false,
+            "url": "packages/pragmarx/*",
             "options": {
                 "symlink": true,
                 "versions": {
-                    "pragmarx/tracker": "4.0.x-dev"
-                }
-            }
-        },
-        {
-            "type": "path",
-            "canonical": true,
-            "url": "packages/pragmarx/support",
-            "options": {
-                "symlink": true,
-                "versions": {
+                    "pragmarx/tracker": "4.0.x-dev",
                     "pragmarx/support": "0.9.x-dev"
                 }
             }
