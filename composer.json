@@ -56,6 +56,24 @@
             "ArtisanLabs\\LaravelVisitTracker\\": "src/",
             "PragmaRX\\Tracker\\": "packages/pragmarx/tracker/src/",
             "PragmaRX\\Support\\": "packages/pragmarx/support/src/"
+        },
+        "files": [
+            "packages/pragmarx/support/src/helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "4.0.x-dev",
+            "master": "dev-main",
+            "dev": "dev-main"
+        },
+        "laravel": {
+            "providers": [
+                "PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "Tracker": "PragmaRX\\Tracker\\Vendor\\Laravel\\Facade"
+            }
         }
     },
     "autoload-dev": {
