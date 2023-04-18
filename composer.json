@@ -54,7 +54,8 @@
     "autoload": {
         "psr-4": {
             "ArtisanLabs\\LaravelVisitTracker\\": "src/",
-            "PragmaRX\\": "packages/pragmarx/"
+            "PragmaRX\\Tracker\\": "packages/pragmarx/tracker/src/",
+            "PragmaRX\\Support\\": "packages/pragmarx/support/src/"
         }
     },
     "autoload-dev": {
