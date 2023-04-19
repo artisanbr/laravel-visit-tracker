@@ -1,7 +1,7 @@
 {
     "name": "artisan-labs/laravel-visit-tracker",
     "version": "dev-stable",
-    "description": "An improvement and combination of the 'antonioribeiro/tracker' & 'shetabit/visitor' plugins",
+    "description": "",
     "keywords": [
         "laravel",
         "visit",
@@ -32,51 +32,16 @@
     "config": {
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "path",
-            "canonical": true,
-            "url": "packages/pragmarx/*",
-            "options": {
-                "symlink": true,
-                "versions": {
-                    "pragmarx/tracker": "4.0.x-dev",
-                    "pragmarx/support": "0.9.x-dev"
-                }
-            }
-        }
-    ],
     "require": {
         "laravel/framework": ">=8",
-        "geoip2/geoip2": "^2.13",
-        "shetabit/visitor": "^4.0",
-        "pragmarx/tracker": "4.0.x-dev",
-        "pragmarx/support": "0.9.x-dev"
+        "geoip2/geoip2": "^2.13"
     },
     "autoload": {
         "psr-4": {
-            "ArtisanLabs\\LaravelVisitTracker\\": "src/",
-            "PragmaRX\\Tracker\\": "packages/pragmarx/tracker/src/",
-            "PragmaRX\\Support\\": "packages/pragmarx/support/src/"
+            "ArtisanLabs\\LaravelVisitTracker\\": "src/"
         },
         "files": [
-            "packages/pragmarx/support/src/helpers.php"
         ]
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "4.0.x-dev",
-            "master": "dev-main",
-            "dev": "dev-main"
-        },
-        "laravel": {
-            "providers": [
-                "PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider"
-            ],
-            "aliases": {
-                "Tracker": "PragmaRX\\Tracker\\Vendor\\Laravel\\Facade"
-            }
-        }
     },
     "autoload-dev": {
         "classmap": [
